@@ -1,0 +1,10 @@
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\bin\Debug\DoA_Ita.exe.config
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\bin\Debug\DoA_Ita.exe
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\bin\Debug\DoA_Ita.pdb
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.csprojAssemblyReference.cache
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.Form1.resources
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.Properties.Resources.resources
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.csproj.GenerateResource.cache
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.csproj.CoreCompileInputs.cache
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.exe
+G:\BoneSync\DoA-Remastered-Installer-ITA\DoA_Ita\DoA_Ita\obj\Debug\DoA_Ita.pdb

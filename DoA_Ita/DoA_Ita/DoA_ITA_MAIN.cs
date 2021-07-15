@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace DoA_Ita
 {
-    static class Program
+    static class DoA_ITA_MAIN
     {
         /// <summary>
         /// The main entry point for the application.

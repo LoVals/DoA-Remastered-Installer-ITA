@@ -16,5 +16,24 @@ namespace DoA_Ita
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Sei sicuro di voler installare la traduzione per Dark Souls: Prepare to Die Edition?", "Conferma",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Sei sicuro di voler installare la traduzione per Dark Souls Remastered?", "Conferma", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
