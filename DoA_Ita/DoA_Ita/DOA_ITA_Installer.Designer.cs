@@ -1,6 +1,6 @@
 ﻿namespace DoA_Ita
 {
-    partial class Form1
+    partial class DOA_ITA_Installer
     {
         /// <summary>
         /// Required designer variable.

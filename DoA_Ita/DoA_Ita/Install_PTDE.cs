@@ -37,7 +37,6 @@ namespace DoA_Ita
                 {
                     return false;
                 }
-            }
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoA_Ita
 {
-    public partial class Form1 : Form
+    public partial class DOA_ITA_Installer : Form
     {
-        public Form1()
+        public DOA_ITA_Installer()
         {
             InitializeComponent();
         }

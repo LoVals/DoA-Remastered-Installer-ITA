@@ -48,16 +48,16 @@
   <ItemGroup>
     <Compile Include="Install_REMASTERED.cs" />
     <Compile Include="Install_PTDE.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DOA_ITA_Installer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DOA_ITA_Installer.Designer.cs">
+      <DependentUpon>DOA_ITA_Installer.cs</DependentUpon>
     </Compile>
     <Compile Include="DoA_ITA_MAIN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DOA_ITA_Installer.resx">
+      <DependentUpon>DOA_ITA_Installer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

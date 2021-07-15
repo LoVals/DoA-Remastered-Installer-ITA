@@ -16,7 +16,7 @@ namespace DoA_Ita
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new DOA_ITA_Installer());
         }
     }
 }
