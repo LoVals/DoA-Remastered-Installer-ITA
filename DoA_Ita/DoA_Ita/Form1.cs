@@ -25,7 +25,8 @@ namespace DoA_Ita
                 FolderBrowserDialog SoulFolderSelect = new FolderBrowserDialog();
                 if (SoulFolderSelect.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    MessageBox.Show(SoulFolderSelect.SelectedPath);
+                    string PTDEDir = (SoulFolderSelect.SelectedPath);
+                    Install_REMASTERED.Execute(PTDEDir);
                 }
                 else
                 {
