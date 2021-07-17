@@ -24,6 +24,7 @@ namespace DoA_Ita
             {
                 DialogResult ErrorReport = MessageBox.Show("DarkSoulsRemastered.exe non trovato: Hai selezionato la cartella sbagliata", "Errore! Cartella selezionata non valida", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 Console.WriteLine("ERROR CODE 1 - EXE FILE NOt FOUND");
+                RetryMenu();
             }
         }
         public static bool ExeFileExists(string CheckDir)
@@ -35,6 +36,20 @@ namespace DoA_Ita
             else
             {
                 return false;
+            }
+        }
+        public static void RetryMenu()
+        {
+
+            FolderBrowserDialog SoulFolderSelect = new FolderBrowserDialog();
+            if (SoulFolderSelect.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string PTDEDir = (SoulFolderSelect.SelectedPath);
+                Install_PTDE.Execute(PTDEDir);
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá");
             }
         }
     }

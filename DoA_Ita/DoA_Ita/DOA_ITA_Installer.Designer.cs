@@ -62,16 +62,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sony Sketch EF", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Adobe Gurmukhi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(48, -2);
+            this.label3.Location = new System.Drawing.Point(81, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(315, 22);
+            this.label3.Size = new System.Drawing.Size(273, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Quale versione vorresti installare?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Form1
+            // DOA_ITA_Installer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,7 +81,7 @@
             this.Controls.Add(this.Remastered);
             this.Controls.Add(this.PTDE);
             this.Font = new System.Drawing.Font("Sony Sketch EF", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Name = "DOA_ITA_Installer";
             this.Text = "Figlie della Cenere - V1.2";
             this.ResumeLayout(false);
             this.PerformLayout();

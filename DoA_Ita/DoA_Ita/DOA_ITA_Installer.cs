@@ -26,7 +26,7 @@ namespace DoA_Ita
                 if (SoulFolderSelect.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     string PTDEDir = (SoulFolderSelect.SelectedPath);
-                    Install_REMASTERED.Execute(PTDEDir);
+                    Install_PTDE.Execute(PTDEDir);
                 }
                 else
                 {

@@ -18,25 +18,56 @@ namespace DoA_Ita
 
             if (Install_REMASTERED.ExeFileExists(SelectedDir) == true)
             {
-                //INSTALLCODE GOES HERE
+                CopyFiles(SelectedDir);
             }
             else
             {
                 DialogResult ErrorReport = MessageBox.Show("DARKSOULS.exe non trovato: Hai selezionato la cartella sbagliata", "Errore! Cartella selezionata non valida", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 Console.WriteLine("ERROR CODE 1 - EXE FILE NOt FOUND");
+                RetryMenu();
             }
         }
-
         public static bool ExeFileExists(string CheckDir)
+        {
+            if (File.Exists(CheckDir + @"/DATA/DARKSOULS.exe"))
             {
-                if (File.Exists(CheckDir + @"/DATA/DARKSOULS.exe"))
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static void RetryMenu()
+        {
+            
+                FolderBrowserDialog SoulFolderSelect = new FolderBrowserDialog();
+                if (SoulFolderSelect.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    return true;
+                    string PTDEDir = (SoulFolderSelect.SelectedPath);
+                    Install_PTDE.Execute(PTDEDir);
                 }
                 else
                 {
-                    return false;
+                DialogResult dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá");
                 }
+        }
+        public static void CopyFiles(string SelectedDir)
+        {
+            string CurrentDir = Directory.GetCurrentDirectory();
+            string PTDEDIR = CurrentDir + @"/PatchData/PTDE/";
+            CopyAndOverWrite(CurrentDir +"item.msgbnd", SelectedDir+ @"/DATA/msg/ITALIAN");
+            CopyAndOverWrite(CurrentDir + "menu.msgbnd", SelectedDir + @"/DATA/msg/ITALIAN");
+            CopyAndOverWrite(CurrentDir + "menu_local.tpf", SelectedDir + @"/DATA/menu/ITALIAN");
+        }
+        public static void CopyAndOverWrite(string sourcefile, string destinationfile)
+        {
+            //Funzione Custom - controlla l'esistenza dei file vecchi e se esistenti li cancella prima di copiare i nuovi file
+            if (File.Exists(destinationfile))
+            {
+                File.Delete(destinationfile);
+            }
+            File.Copy(sourcefile, destinationfile);
         }
     }
 }
