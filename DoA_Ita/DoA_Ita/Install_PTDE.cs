@@ -56,9 +56,9 @@ namespace DoA_Ita
         {
             string CurrentDir = Directory.GetCurrentDirectory();
             string PTDEDIR = CurrentDir + @"/PatchData/PTDE/";
-            CopyAndOverWrite(CurrentDir +"item.msgbnd", SelectedDir+ @"/DATA/msg/ITALIAN");
-            CopyAndOverWrite(CurrentDir + "menu.msgbnd", SelectedDir + @"/DATA/msg/ITALIAN");
-            CopyAndOverWrite(CurrentDir + "menu_local.tpf", SelectedDir + @"/DATA/menu/ITALIAN");
+            CopyAndOverWrite(PTDEDIR + "item.msgbnd", SelectedDir+ @"/DATA/msg/ITALIAN/item.msgbnd");
+            CopyAndOverWrite(PTDEDIR + "menu.msgbnd", SelectedDir + @"/DATA/msg/ITALIAN/menu.msgbnd");
+            CopyAndOverWrite(PTDEDIR + "menu_local.tpf", SelectedDir + @"/DATA/menu/ITALIAN/menu_local.tpf");
         }
         public static void CopyAndOverWrite(string sourcefile, string destinationfile)
         {

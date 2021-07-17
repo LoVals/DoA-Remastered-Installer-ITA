@@ -18,7 +18,7 @@ namespace DoA_Ita
 
             if (Install_REMASTERED.ExeFileExists(SelectedDir) == true)
             {
-                //INSTALLCODE GOES HERE
+                CopyFiles(SelectedDir);
             }
             else
             {
@@ -51,6 +51,23 @@ namespace DoA_Ita
             {
                 DialogResult dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá");
             }
+        }
+        public static void CopyFiles(string SelectedDir)
+        {
+            string CurrentDir = Directory.GetCurrentDirectory();
+            string DSRDIR = CurrentDir + @"/PatchData/DSR/";
+            CopyAndOverWrite(DSRDIR + "item.msgbnd.dcx", SelectedDir + @"/msg/ITALIAN/item.msgbnd.dcx");
+            CopyAndOverWrite(DSRDIR + "menu.msgbnd.dcx", SelectedDir + @"/msg/ITALIAN/menu.msgbnd.dcx");
+            CopyAndOverWrite(DSRDIR + "menu_local.tpf.dcx", SelectedDir + @"/menu/ITALIAN/menu_local.tpf.dcx");
+        }
+        public static void CopyAndOverWrite(string sourcefile, string destinationfile)
+        {
+            //Funzione Custom - controlla l'esistenza dei file vecchi e se esistenti li cancella prima di copiare i nuovi file
+            if (File.Exists(destinationfile))
+            {
+                File.Delete(destinationfile);
+            }
+            File.Copy(sourcefile, destinationfile);
         }
     }
 }
