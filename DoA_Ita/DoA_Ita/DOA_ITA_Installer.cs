@@ -27,10 +27,11 @@ namespace DoA_Ita
                 {
                     string PTDEDir = (SoulFolderSelect.SelectedPath);
                     Install_PTDE.Execute(PTDEDir);
+                    dr = MessageBox.Show("Installazione per DS PTDE completata con successo! Il programma si chiuderá...");
                 }
                 else
                 {
-                    dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá");
+                    dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá...");
                 }
                 this.Close();
             }
@@ -48,10 +49,11 @@ namespace DoA_Ita
                 {
                     string RemasterDir = (SoulFolderSelect.SelectedPath);
                     Install_REMASTERED.Execute(RemasterDir);
+                    dr = MessageBox.Show("Installazione per DSR completata con successo! Il programma si chiuderá...");
                 }
                 else
                 {
-                    dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá");
+                    dr = MessageBox.Show("Non hai selezionato una directory. Il programma si chiuderá...");
                 }
                 this.Close();
             }
