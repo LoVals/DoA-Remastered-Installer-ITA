@@ -25,6 +25,7 @@ namespace DoA_Ita
                 DialogResult ErrorReport = MessageBox.Show("DARKSOULS.exe non trovato: Hai selezionato la cartella sbagliata", "Errore! Cartella selezionata non valida", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 Console.WriteLine("ERROR CODE 1 - EXE FILE NOt FOUND");
                 RetryMenu();
+                //Cippirimerlo Boia!
             }
         }
         public static bool ExeFileExists(string CheckDir)
